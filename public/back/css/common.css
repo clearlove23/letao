@@ -32,6 +32,13 @@ ul {
 .red {
   color: #A94442;
 }
+/* 希望让所有的表格内容, 都水平垂直居中 */
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  /* 设置表格内容垂直居中 */
+  vertical-align: middle;
+}
 
 .lt_aside{
   width: 180px;
@@ -53,6 +60,7 @@ ul {
   text-align: center;
   font-size: 24px;
   background-color: #367FA9;
+  z-index: 999;
 }
 .lt_aside .brand a{
   color:#fff;
@@ -115,6 +123,7 @@ ul {
   top: 0;
   padding-left: 180px;
   transition: all 1s;
+  z-index: 1;
 }
 .lt_topbar.hidemenu {
   padding-left: 0px;
@@ -130,4 +139,9 @@ ul {
 }
 .lt_main .breadcrumb {
   margin-top: 20px;
+}
+.lt_content .echarts_1,
+.lt_content .echarts_2 {
+  width: 48%;
+  height: 400px;
 }
